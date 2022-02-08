@@ -102,7 +102,9 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
     
-    #By using mode() to get the most common set of values of each element along yhe slected axis
+    #By using mode() to get the most common set of values of each element along the slected axis
+    #Here,the time() function returns the number of seconds passed since epoch.
+    #Here,i use the format() method formats the specified values and insert them inside the string's placeholder{}.
     # TO DO: display the most common month
     most_comm_month=df['month'].mode()[0]
     print("Most Common Month (1= January,...,6=June):{}".format(most_comm_month))
